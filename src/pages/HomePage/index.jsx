@@ -2,6 +2,9 @@ import React from "react";
 import Styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import { eventData } from "../../utils/event";
+import EventCard from "../../components/event/EventCard";
+import RecommendEvent from "../../components/event/RecommendEvent";
 
 const StyledPage = Styled.div`
   margin:4em;
@@ -18,6 +21,10 @@ padding:20px 0px
 const toPage = (history, url) => {
   history.push(url);
 };
+
+eventData.sort(function (a, b) {
+  return parseInt(b.like) - parseInt(a.like);
+});
 
 const HomePage = () => {
   const history = useHistory();
@@ -62,8 +69,11 @@ const HomePage = () => {
         </Button>
       </StyledButtonGroup>
       <StyledRecommend>
-      <h2>RecommendEvent</h2>
-        </StyledRecommend>
+        <h2>推薦活動</h2>
+        {eventData.slice(0, 3).map((props) => {
+          return <RecommendEvent props={props}></RecommendEvent>;
+        })}
+      </StyledRecommend>
     </StyledPage>
   );
 };
