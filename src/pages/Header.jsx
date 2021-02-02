@@ -27,21 +27,21 @@ const Header = () => {
         <Button
           variant="warning"
           className="mx-1"
-          onClick={() => toPage(history, "/event")}
+          onClick={() => toPage(history, "/events")}
         >
-          Event
+          Events
         </Button>
         <Button
           variant="warning"
           className="mx-1"
-          onClick={() => toPage(history, "/artist")}
+          onClick={() => toPage(history, "/artists")}
         >
-          Artist
+          Artists
         </Button>
         <Button
           variant="warning"
           className="mx-1"
-          onClick={() => toPage(history, "/login")}
+          onClick={() => toPage(history, "/logins")}
         >
           Login
         </Button>

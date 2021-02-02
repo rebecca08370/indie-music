@@ -104,7 +104,7 @@ export const eventData = [
             "whocares2016",
             "thickbigband"
         ],
-        "like": 104,
+        "like": 106,
         "datetime": "2021 年 4 月 10 日",
         "weekday": "星期六",
         "event_fb": "https://jurassicfestival.kktix.cc/events/0410",
@@ -251,7 +251,7 @@ export const eventData = [
             "linion_linion",
             "RAiN_and_PiCTURE"
         ],
-        "like": 78,
+        "like": 80,
         "datetime": "2021 年 3 月 27 日",
         "weekday": "星期六",
         "event_fb": "https://www.facebook.com/events/1999533290183911",

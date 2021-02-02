@@ -19,7 +19,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 6,
-        "follower": 22732,
+        "follower": 22737,
         "following": 3,
         "content": "性別：男\n生日 / 成立時間：11 月 20 日\n\n持修Instagram：chih_siou"
     },
@@ -31,7 +31,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 19,
-        "follower": 12032,
+        "follower": 12038,
         "following": 10,
         "content": "\n【活在自己的世界】https://youtu.be/vTvPtgUs_Bc【關於守夜人樂團】\nNight Keepers守夜人樂團，於 2015年正式成軍，最初遊走在電影配樂與遊戲作曲中，之後在各類音樂創作與現場演出中成形，目前成員為團長旭章、主唱稚翎與鼓手其偉，電吉他手佳穎，合作bass手林羿妏，並持續以跨界合作方式推出作品。\nNight Keepers是少數擁有不同身份使命的創作組合，時而涉足電玩，時而出版圖文詩集，有時只是用音樂表達一個失眠人對這世界的種種期待、躲藏、痛苦與觀察。\n守夜人的音樂以充滿敘事性、神經質的鋼琴與節奏作基底，輔以迷幻的電吉他音牆，搭上雙主唱的隨性哼唱，共同譜寫出溫暖而童心未泯的安眠旋律。\n守夜人期望能扮演『睡不著使者』，用音樂、文字、影像、設計、live 演出與聽眾互相交流，並透過人工智慧軟體『聊天機器人』,與聽眾在睡前互相記錄、交換自己空虛、痛苦、孤獨的故事，藉此達到一種『團體治療』的效果，讓每個人都有機會成為彼此的守護者(Keepers)。\n▲更多活動資訊請關注⭐️Facebook__Night Keepers 守夜人⭐️Instagram__nightkeepers2019⭐️Youtube＿Night Keepers https://youtu.be/vTvPtgUs_Bc"
     },
@@ -43,7 +43,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺中市",
         "songs": 14,
-        "follower": 5164,
+        "follower": 5165,
         "following": 17,
         "content": "\n畢竟生活就像被強暴，要是躲不開你只能學會享受。所以享受著生活強暴的你我他，我們都是人生中的老破麻。 \n\"你可以嘲笑我們的團名，但是不要忘記那也是為了逗你開心。\" \nSometimes life will FUCK YOU UP so hard that you gotta turn around, get fucked in another position, and enjoy it like how an OLD SLUT WOULD. So go hard or go home, live the old slut LIFE.\n\"Laugh at us if you will, but remember that we brought a smile to your DAMN FACE.\"\n粉絲專頁：https://www.facebook.com/Oldslot.b1/\n獲獎經歷:2016台東鐵花村焚風音樂大賞決賽鐵團獎（第一名）2017大安沙雕音樂季熱音大賽第一名2018 12th舊愛新歡-古典詩詞譜曲創作暨演唱競賽 狀元（第一名）"
     },
@@ -55,7 +55,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 8,
-        "follower": 10726,
+        "follower": 10731,
         "following": 22,
         "content": "生日 / 成立時間：2017 年 5 月 27 日\n\n♡♡♡? 海豚刑警 ♡♡♡?大家注意==！！哈皮^^~❣２０１７屁團誕生(⁎⁍̴̛ᴗ⁍̴̛⁎)❣❣~☆,,*••﹏海豚刑事總部正式發佈出道處女秀新聞稿@@==！！！主幹道由一把電吉他與一把木吉他先行拿下==！！支流配置==！一些豚豚平常就會拿來噗累噗累ㄉ玩具聲響，，最後再加上淑芬志明雙主唱旋轉跳躍華麗組成@@..朗朗上口ㄉ旋律==！了無新意ㄉ和弦==！曲風多變==！歌詞偏不流俗==！狗年初加入ㄌ彈指之間御用旋律線夢想導師aka金發把拔抖指引~與擔任待引爆抖哈姆太郎「咚咚」角色aka進擊抖鼓手正雄，在這ㄍ壞噗噗(Bad poo poo)抖世界，揪讓婐悶一起~~!!~!!!~陰蒂Rock一夏芭٩(˃̶͈̀௰˂̶͈́)و❣⚡️⚡️❣❣！！！\nhttps://www.facebook.com/iruka0.0\n@iruka0.0"
     },
@@ -67,7 +67,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 12,
-        "follower": 34459,
+        "follower": 34463,
         "following": 22,
         "content": "生日 / 成立時間：2015 年 10 月 27 日\n\n民謠搖滾臉書：https://www.facebook.com/yourwomansleepwithothers/微博：https://m.weibo.cn/u/6364009385?uid=6364009385&luicode=10000011&lfid=1076036396826066歡迎私訊捐款"
     },
@@ -79,7 +79,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 17,
-        "follower": 27177,
+        "follower": 27228,
         "following": 11,
         "content": "性別：男\n\n在我們最美麗的年華，讓我們相遇，就讓遺憾與美好藏在旋律裡。\n『謝謝妳/你，在我們最美麗的年華，讓我們相遇， 就讓遺憾與美好藏在旋律裡。』\n甜約翰前身為成立於 2011 年，來自台南的 Natural Outcome 自然發聲樂團，主唱浚瑋、吉他手罐頭、貝斯手阿獎以及鼓手小 J 相遇於成大，成團後經歷進入社會的焦慮以及討生活的矛盾，沈潛兩年後在 2016 的一個雨天裡遇見Mandark，從此開啟甜約翰的嶄新篇章。 \n團名的 Sweet John 源自於專與情人、伴侶道別的「Dear John Letter」，甜約翰擅長以輕快小品式的旋律，內斂且溫柔的呢喃出首首獨白。揉和多種器樂聲響以及風格元素，延續 Natural Outcome 的五人編制以及對於律動的完美掌握，編織出屬於甜約翰式的小品慵懶，獻給每位聽者心中，如此美好卻只能揮手告別的 Sweet John。\n主唱：浚瑋　鍵盤：Mandark　吉他：罐頭　貝斯：阿獎　鼓：小J\nFacebook： https://www.facebook.com/sweetjohnband/Youtube： https://www.youtube.com/channel/UCGdLLM0CekFmgMhPpnG9A7Q"
     },
@@ -103,7 +103,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 3,
-        "follower": 13946,
+        "follower": 13955,
         "following": 1,
         "content": "性別：其他\n\n關於康士坦的變化球 KST Post Rock為「恆定」基底，試著加入各種「改變」元素，多一點強烈節奏，多一點吉他聲線，多一點複雜的鼓點編寫，將各種嘗試放到音樂裡試驗催化，組合出超越後搖的基本想像，就像是灰色的天空飄散著淡淡的彩色香氣，看似平衡卻似墜落，既迷幻又真實，內斂卻開放。唯一不變的就是變；世間萬物每一刻都在變動，沒有一樣是靜止的；我們不可能保持固定，只能維持動態的平衡。平衡所散發出的能量，將推往無限。成員吉他手：CREED吉他手：ARNY貝斯手： SION鼓手：小米VJ：啟泰"
     },
@@ -115,7 +115,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 7,
-        "follower": 2216,
+        "follower": 2215,
         "following": 34,
         "content": ""
     },
@@ -151,7 +151,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 39,
-        "follower": 3648,
+        "follower": 3647,
         "following": 22,
         "content": "\n“我們就是要毫不猶豫的帶來快樂”\n樂迷封為最能挑戰肌耐力極限的跳舞搖滾樂團。極具情緒煽動力以及強大的現場演出實力迅速成為各大音樂祭的主力，演出視野延伸至日本，港澳及中國；曾受日本富士電視台，愛知電視台專訪，首次日本公演獲得極佳的票房。\n毫不間斷的演出風格，讓P!SCO超有特色。電子迷離曲風混搭歡愉舞曲節奏，大量使用合成器和古典鋼琴創造了絕對獨特的P!SCO曲風；演出時和台下樂迷的互動創造了強大的演出氣場，樂迷自主成立後援會，有趣的舞台動作讓台上台下玩成一片。P!SCO固定發表特殊企劃的樂團週邊商品總是造成搶購，銷售一空。\n接下來P!SCO樂團將繼續走向世界舞台，我們絕對帶著滿滿的誠意和源源不絕的活讓大家感到絕對的快樂。來吧！加入我們。暖身完畢後就跟我們作陣跳舞啦～～\nP!SCO websitehttp://www.piscoband.com\nP!SCO 周邊商品線上商店http://www.shapa-art.com/shop.php?html=product&type=10000/10058/10062http://store.piscoband.com/\nYoutube Channelhttp://www.youtube.com/user/piscochannel\nTwitterhttps://twitter.com/PiscoBand\n新浪微博http://weibo.com/piscoband\nInstagramhttp://instagram.com/piscoband\nUstreamhttp://www.ustream.tv/channel/p-scoustream"
     },
@@ -187,7 +187,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 7,
-        "follower": 5550,
+        "follower": 5552,
         "following": 27,
         "content": "\n由四個不事生產的懶人組成的樂團，成立以來在台北、基隆與台東等地進行創作，音樂受啟發自香菸焦油、林間野味與都市廢氣。\n易經：「無妄之疾，勿藥有喜」，突然得了死不了的病，不吃藥就會痊癒。對於種種欲加諸承擔的文明，我們不願戒斷與根治。\n====\n郭力瑋: guitar & vocal謝秉男: guitar & vocal謝碩元: bass邱孝齊: drum\n歷任團員:\n林昀鋒林肯\nFACEBOOK : https://www.facebook.com/nononsense.collective/微博：https://weibo.com/u/6396826066"
     },
@@ -235,7 +235,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "",
         "songs": 1,
-        "follower": 4685,
+        "follower": 4686,
         "following": 0,
         "content": "性別：男\n\n許含光Lumi\n1993 年生於臺北市，臺北市立成功高中畢業，現就讀國立臺灣大學。學生，歌手，文字創作者。\n2012 年起曾參與多部微電影與廣告配樂、 2013 年 9 月舉辦首次不插電演唱會、2014年七月三號在小河岸初登臺。2015年九月在Legacy mini舉辦live & unplugged演出。2017年全台《借一杯咖啡的時間》咖啡廳 mini tour 演出20場。\n音樂風格受英式搖滾和電子樂影響深遠，以吉他創作的民謠色彩為基調，捕捉對生命裡大小事的慾望和想像的模樣，慢慢地吟唱。\n2016年起陸續發表個人音樂作品。2017年12月5日個人首張全自作專輯《曖曖 A Portrait of My Mile Way》正式發行。\nFB - www.facebook.com/iamLumiXu/ IG - www.instagram.com/lumi.xu/"
     },
@@ -247,7 +247,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 12,
-        "follower": 11074,
+        "follower": 11082,
         "following": 16,
         "content": "\n荷爾蒙少年是一種狀態，自溺而溫柔、叛逆卻善良。\n為了拼湊出屬於九零末的新聲音，在龐克、日搖和disco funk元素之間不停轉換嘗試，氾濫的少年抑鬱、卻少不了俏皮叛逆的模樣。也許外在就如同團名般稚氣瀟灑，可現場演出的張力，帶來的絕對是不亞於專輯裡的震撼。\n（文/詹詠安、陳玄佾）\n-\nWe are HormoneBoys from Taiwan.\nIn order to assemble the new voice to represent the late 90s, we kept trying to switch different elements from punk to Japanese style rock n roll and even to disco funk. \nDepressions of the teenagers were drowning but they never lack the face of a witty rebel. Appearing innocent as their title of the band, elegant but unconventional, the shock and power they have for the audience in live shows will definitely astound you far more than the album itself does.\n（Writing / Yuki Lin）\n歡迎追蹤我們的臉書及instagram：https://www.facebook.com/Hormoneboys/https://www.instagram.com/hormoneboys_/"
     },
@@ -259,7 +259,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 13,
-        "follower": 4064,
+        "follower": 4070,
         "following": 14,
         "content": "\n你心中的浪漫是什麼樣子？ 收到日思夜盼的那封信， 重新上檔的舊電影， 還是相擁漫舞在大雨裡。 我們都在用不同的方式， 為自己所憧憬的愛祈禱。 將一切染成粉色， 讓春天融化在夢裡。\nFacebookhttps://www.facebook.com/pages/category/Band/%E6%BA%AB%E8%92%82%E6%BC%AB%E6%AD%A5-Wendy-Wander-2004247253029598/Instagramhttps://www.instagram.com/wendywanderofficial/?igshid=63z4mw4rqxhkApple Musichttps://music.apple.com/tw/album/spring-spring/1538088304spotifyhttps://open.spotify.com/artist/5YVLwkimiEhl8L409NfySF?si=3XN3TTd7TJmjZUeC2hK8QQKKBOXhttps://kkbox.fm/ep1X42微博 https://www.weibo.com/wendywander?is_all=1網易雲音樂 https://music.163.com/#/album?id=97417165"
     },
@@ -283,15 +283,15 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 10,
-        "follower": 8253,
+        "follower": 8255,
         "following": 1,
         "content": "性別：男\n\n麋先生Mixer //\n❝ 我們不知道最高的地方在哪但我們上路了你們的同行會讓我們更勇敢的踏下每一步❞ \n五位團員均來自台灣南部，陸續從學生時期就因音樂而相識，進而北上在2012年10月正式組團成為【麋先生Mixer】‧2013年發行首張創作專輯《馬戲團運動》，並以此專輯拿下2014年第25屆金曲獎最佳樂團獎‧2014年經過近5個月的比賽流程，拿下公視【音樂創世紀】創作冠軍‧2014年9月榮獲外交部邀約，代表台灣新生代樂團前往東北亞地區，在日本東京、福岡與韓國釜山三個城市進行音樂文化交流巡演。‧2015年3月發行第二張創作專輯《沒名字的人類》，並以此專輯入圍2016年第27屆金曲獎最佳樂團獎。‧2016年3月發行第三張創作專輯《野生》。‧2018年12月於臺大體育館舉辦首場大型售票演唱會。\n麋先生以淋漓暢快的曲風和耐人尋味的文字風格，廣受各界喜愛，從北到南受邀參與校園演出、各大音樂節與商業場的邀約不斷，以一場場現場演唱展開音樂旅途的麋先生，所到之處不分台上、台下，全場就是一個舞台，包括你我！\n────────麋先生│Mixer 團員────────聖皓 Vocal喆安 A.Guitar小B E.Guitar以諾 Bass逸凡 Drums────────麋先生官方‧Mixer Official────────◢ Facebook https://fb.com/MixerMiSir◢ YouTube https://www.youtube.com/MixerMisir◢ Instagram https://instagram.com/mixerband_official"
     },
     {
         "id": "arrowwei",
         "artist": "魏嘉瑩 Arrow Wei",
-        "band_img": "https://akstatic.streetvoice.com/profile_images/ar/ro/arrowei/EnKqacA59mBHd9wMy58bh8.JPG?x-oss-process=image/resize,m_fill,h_600,w_600,limit_0/interlace,1/quality,q_95/sharpen,80/format,jpg), .jpg",
-        "bg_img": "https://akstatic.streetvoice.com/profile_images/ar/ro/arrowei/EnKqacA59mBHd9wMy58bh8.JPG?x-oss-process=image/resize,m_fill,h_360,w_1920,limit_0/interlace,1/quality,q_95/sharpen,80/format,jpg), .jpg",
+        "band_img": "https://akstatic.streetvoice.com/profile_images/ar/ro/arrowei/EnKqacA59mBHd9wMy58bh8.JPG",
+        "bg_img": "https://akstatic.streetvoice.com/profile_images/ar/ro/arrowei/EnKqacA59mBHd9wMy58bh8.JPG",
         "type_": "音樂人",
         "place": "臺中市",
         "songs": 6,
@@ -319,7 +319,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "台灣",
         "songs": 7,
-        "follower": 1087,
+        "follower": 1088,
         "following": 51,
         "content": ""
     },
@@ -343,7 +343,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "新北市",
         "songs": 6,
-        "follower": 24754,
+        "follower": 24765,
         "following": 0,
         "content": "性別：其他\n生日 / 成立時間：2016 年 5 月 27 日\n\n美秀集團,來自嘉義的低科技俗氣樂隊,以實驗樂器結合搖滾聲響,加上民謠、龐克等元素,帶領觀眾進入愛與欺騙的情慾世界。\n【重要資歷】獲得2018海洋音樂祭「評審團大賞」首張EP「Sound Check」入圍第八屆金音獎最佳新人「Sound Check」巡迴台中場,入圍第八屆金音獎最佳現場演出獲得「2017硬地專輯錄製補助案:專輯類」補助，共80萬獲得「2018硬地音樂行銷推廣」補助，共70萬《懶趴火》入圍第八屆金音獎最佳搖滾單曲《捲菸》youtube點擊150萬《Only Scott Knows》被選為ANGUS CHIANG倫敦時裝周配樂《一隻雞》獲臺灣原創流行音樂大賞(河洛語組貳獎)《電火王》獲臺灣原創流行音樂大賞(河洛語組參獎)《細粒的目睭》收錄於南面而歌合輯\n【演出經歷】2016 覺醒音樂祭2016 混種現場2016 巨獸搖滾音樂祭2016 愛愛搖滾帳篷音樂節2017 嘉義跨年晚會2017 首張EP「Sound Check」噴出巡迴2017 大港開唱2017 覺醒音樂祭2017 金音獎演出2018 嘉義跨年晚會2018 覺醒音樂祭2018 《電火王》專輯實驗巡迴2018 無限自由藝術祭2018 愛愛搖滾帳篷音樂節\n【集團成員】狗柏 Gobo|主唱、低科技發明家、電火王|Vocal, Installation Artist, King of Light修齊 Hsiu Chi|吉他手|Guitarist珮慈 Amie|貝斯手|Bassist冠佑 Luis|鍵盤手|Keyboardist鍾錡 Kenny|鼓手|Drummer\n聯絡人:劉修齊手機:0961199542信箱:m920333333@gmail.com"
     },
@@ -367,7 +367,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 17,
-        "follower": 9841,
+        "follower": 9842,
         "following": 41,
         "content": "性別：其他\n\n【表演 各項活動邀約】請洽經紀人 玫芸 Email：m688586@gmail.com電話：0978688586【facebook】http://www.facebook.com/CrispyCrispyCrispy【Instagram】@crispytheband【微博】http://www.weibo.com/crispycrispycrispy\nCrispy脆樂團，由男主唱兼吉他手 Skippy 以及女主唱兼多功能樂手丁丁所組成，為雙主唱雙人組合，成軍於2010年。\nCrispy脆樂團以Skippy為創作首腦，從日常生活出發，敘事般的口吻圍繞成長的各個面向。以木吉他為基底，Skippy清澈細膩的嗓音帶著幾分稚氣男孩的氣息，與丁丁多層次的歌聲交織，形成Crispy獨特的聲響，再搭配取樣器的 loop、電子合成器、鍵盤音色與音效，營造出豐富多樣的音樂氛圍，時而清新明亮、時而迷幻惆悵、時而搖滾吶喊，反應成長所經歷的不同心境層面。"
     },
@@ -379,7 +379,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 36,
-        "follower": 3312,
+        "follower": 3313,
         "following": 43,
         "content": "生日 / 成立時間：2017 年 6 月 3 日\n\n青是青鳥的青、虫是王虫的虫。成軍於 2017 年夏季，創作涵蓋華語、台語、英語，曲風民謠骨電子皮，直白的歌詞搭著朗朗上口的旋律，音樂如蟲子一般，鑽進聽眾的耳朵裡就此定居。活動、合作邀約：aoimushiband@gmail.com\n青虫aoi Band Members吉尼／Vocal&Guitar郭宏／Bass信展／Drums黄柏翰／Electric Guitar \n2020年青虫aoi首張專輯《有你的故事ū lí ê kòo-sū》\n◉ 搶先聽預告◉6月22日（一）20:00將在 StreetVoice 釋出三首完整曲目聽一聽有沒有你的故事\n►2020.06.30 數位平台發行➩https://aoi.lnk.to/firstalbum2020.08.14 實體全面上架\n↳ Follow us on Instagram：aoimushiband"
     },
@@ -391,7 +391,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺中市",
         "songs": 11,
-        "follower": 7782,
+        "follower": 7783,
         "following": 5,
         "content": "\n“Who Cares? ”2016年4月成立於台中第三人稱單數後面動詞要加s，很重要。\n我們是胡凱兒。"
     },
@@ -415,7 +415,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 30,
-        "follower": 10880,
+        "follower": 10882,
         "following": 0,
         "content": "性別：男\n生日 / 成立時間：1993 年 10 月 29 日\n\nLeo王，沙發王，有舊的沙發何必買新的沙發，嘴裡碎念著你爸媽不想讓你聽到的歪理，但其實那些都是他對這世界的期許。\n來自顏社，念念唱唱，搖搖擺擺。\nLeo Wang, rapper and singer based in Taipei, Taiwan, began playing in rock bands at the age of 17. Later, he started rapping when he started smoking. Musically influenced by Radiohead, The Doors, Bone Thugs-n-Harmony, Jurassic 5, Maceo Parker, and Jay Chou,Leo Wang is about trying to combine jazz, hip-hop, reggae, and scat singing with Mandarin Chinese in a groovy way,and making his people dance.官方網站： https://www.facebook.com/LeoWangSofaKing"
     },
@@ -427,7 +427,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 6,
-        "follower": 350,
+        "follower": 351,
         "following": 0,
         "content": "性別：其他\n\nFUTURE AFTER A SECOND，來自台北的Metalcore樂團，自2014年成立以來不斷嘗試將post-hardcore的旋律融合metalcore、numetal的節奏發展出獨樹一幟的風格，也一直努力在創造與樂迷在演出現場的各種連結可能性。於2017年發行首張EP<To the Light>，演出用大量肢體語言及情緒煽動觀眾，搭配強烈的視覺呈現獲得好評，於2017年5月進行東京地區巡迴，並加入日本廠牌Far channel Record，2017年底發起以Livehouse金屬場景為主的第一屆Autumn Attack，希望以團結的理念，讓金屬樂可以獲得更多的焦點。\nFAAS在2019年8月發行首張專輯<OFiN>，以”現在即是未來的“理念貫穿專輯，希望在這個時代，我們得謹慎選擇每一步，別讓我們所擁有的自由，在自己的手上消失。\n2020年FAAS<OFiN>專輯以<Invert>奪得全美獨立音樂獎最佳金屬單曲，並以最佳專輯封面設計與<Invert>最佳短片導演獲得入圍肯定。"
     },
@@ -439,7 +439,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "基隆市",
         "songs": 16,
-        "follower": 1442,
+        "follower": 1441,
         "following": 37,
         "content": "性別：男\n\n成員:：    撥屎 / Bass, Vocal    阿顯 / Guitar, Vocal    智明 / Guitar, Vocal    阿來/ Drums\n現實拖磨少年時的夢，生活跟理想你要選那一項？這是成為男子漢的必經路程。\n踏著黑紫色的雲彩，口中哼著不成調的音階來到人世間，三頭六臂手持雞腿降臨凡間，帶給俗世人們無盡的苦惱與納悶，毫無頭緒的前奏，騎虎難下的主歌，風流倜儻的副歌與不知所措的結語，狂亂的嘶吼猶如天蓬元帥下凡，雜亂無章的演奏彷彿春天的水溝，帶給你莫名奇妙又充滿快感帶點尷尬的氛圍。\n才氣充滿的粗獷4人樂隊專門救災，切西瓜。\n非人物種（Inhuman）\nContact : inhumanbandok@gmail.com活動洽詢:70.6jt7@gmail.com"
     },
@@ -463,7 +463,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 8,
-        "follower": 2412,
+        "follower": 2411,
         "following": 12,
         "content": "\n倒車入庫 Reversing into Garage 來自台北六張犁的車庫龐克樂隊。\n來自台北六張犁，車庫龐克樂隊。\n站在社會陰暗角落，莫名的歇斯底里，\n以狹隘卻自以為獨道的視野觀察眼前事物，\n「交流道旁的檳榔攤」、「朋友的朋友自殺前的日記」、「今天月亮好大」、「啊... 這個路燈壞了」、「燙傷藥膏的廣告」\n生活不起眼的狗屁小事，在心中激起莫名波瀾。\n不在乎社會如何變化，不在乎黑夜過去迎來的白晝或末日。\n聯繫：黑市音樂 bmmptw@gmail.com"
     },
@@ -475,7 +475,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "高雄市",
         "songs": 11,
-        "follower": 4088,
+        "follower": 4090,
         "following": 22,
         "content": "性別：男\n\n未來人生，對我們來說總是像個謎。一塊永遠都缺少一片的拼圖。在抉擇的路上時常迷失方向，然而相信音樂能夠為人們找到出口的四個人以此為概念在2014年組成了Way of Puzzle謎路人。希望創作出能幫助和自己一樣對於未來迷惘的年輕人找到方向，對於音樂能夠撫慰人心深信不疑也期待能夠在音樂的路上找到更多相同理念的夥伴。\n  曲風以new metal夾雜metal core及post-hardcore為底延伸出多變的曲風，元素融合雷鬼及饒舌風格。呼應了人生中有許多未知數的道路，令人惶恐不安。詞曲呈現多以訴說對於新世代面臨的壓力及競爭下的內心情境。四個來自高雄的年輕人要用他們的音樂與更多族群形成共鳴。"
     },
@@ -499,7 +499,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "高雄市",
         "songs": 8,
-        "follower": 3187,
+        "follower": 3188,
         "following": 0,
         "content": "\nThe Fur. 是一支夢幻、獨立流行樂團，由廖柚文擔任詞曲創作者，吳中凌編曲，於2016年底創立。朗朗上口的旋律與清澈歌聲，帶來夢幻的合成流行樂和獨立搖滾的曲風。The Fur.於2018年發行了首張專輯《Town》，即以《Town》入圍第30屆金曲獎GMA最佳新人獎；第10屆GIMA金音獎最佳新人獎；歌曲〈Short Stay〉則是入圍最佳另類流行單曲，依專輯首張拿下相當好的成績！除臺灣活動以外，The Fur.於2019年美國奧斯汀南方音樂節SXSW首次亮相，更在成立初期出演2018年西班牙春之聲音樂節 (Primavera Sound)、英國Focus Wales，以及泰國曼谷Cat Expo5參與演出。積極投入國內外活動的The Fur.，目前正在籌備第二張全新創作專輯，預計於2020年發行。"
     },
@@ -511,7 +511,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "新北市",
         "songs": 10,
-        "follower": 18546,
+        "follower": 18551,
         "following": 0,
         "content": "\n南西肯恩首張正式 EP《那麼我想再擁有自己》【數位平台點聽】http://bit.ly/那麼我想再擁有自己\n【FACEBOOK】https://www.facebook.com/ncknband/【INSTAGRAM】ID: ncknband【CONTACT】黑市音樂bmmptw@gmail.com"
     },
@@ -571,7 +571,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "",
         "songs": 3,
-        "follower": 1665,
+        "follower": 1666,
         "following": 1,
         "content": ""
     },
@@ -631,7 +631,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺中市",
         "songs": 28,
-        "follower": 3641,
+        "follower": 3643,
         "following": 2,
         "content": "性別：男\n\n血肉果汁機在2016年5月結束成立十年首次專場大型演出「血肉宮：建宮蓋廟演唱會」，開演前門票即全數銷售一空，如此盛況在台灣INDIE金屬樂團不算常見，而且在此之前鮮少有人會將台灣廟會與金屬文化融合在一起。血肉果汁機不僅將兩者強烈展現在音樂風格之中，現場表演的視覺呈現也是相當具有特色，更別忘了主唱Gigo頭上那頂在大拜拜時才會看到的死豬頭。\n血肉果汁機成立於2006年，風格以DEATHCORE和HARDCORE為主，現任成員為主唱Gigo、吉他手ZERO、吉他手Matt、貝斯手sionC和鼓手Evan。2009年發行首張 EP「下體潰爛 A Morbid State」，2011年發行第二張EP「粗殘台中 The Brutal Taichung」，整張風格以臺灣傳統旋律為基底出發，有別於以往的金屬風格。2015年發行第一張完整專輯「GIGO」，此專輯在傳統廟會與喪禮伴奏裡找到新思維，將台灣傳統旋律五聲音階成功和宇宙概念融合，其音樂創作以傳統文化旋律為基底，並揭露了宇宙監獄太陽系的秘密，其內容最大的概念主要要讓各位知道「我們寫的事件不是虛構，我們只是把你所不知道的事實以虛構的方式呈現給你罷了」。同年底，血肉果汁機以「GIGO」此專輯拿下了第六屆金音獎最佳搖滾專輯獎 (6TH GOLDEN INDIE MUSIC AWARD-BEST ROCK ALBUM) 。且整張以「經書概念」打造的外殼包裝，也在2016年入圍金曲獎-專輯最佳設計獎。\n2017年，血肉發行「黑訊息」新EP、進行亞洲巡演，2018年推出新專輯「深海童話」、結合全息投影技術拍攝MV，並將展開一連串世界巡演。同年更榮獲金音創作獎最佳現場演出之肯定。2019年除入圍第三十屆金曲獎最佳樂團，更獲得了全美獨立音樂獎的專輯封面設計國際大獎。成軍至今 12 年，參與大大小小的國內外音樂祭巡迴表演，一步一腳印的把台灣的希望帶出去國外，讓世界聽到屬於台灣的在地故事。\n血肉果汁機在音樂上的風格，源自於台灣人的信仰文化，平時不會注意到的生活習慣，如今卻是備受矚目的關鍵來源。"
     },
@@ -643,7 +643,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 29,
-        "follower": 333,
+        "follower": 334,
         "following": 28,
         "content": "性別：男\n\n全新陣容的BC將在音樂上建築更寬大場景，更意味將持續帶來更多突破與可能，新作品蛻變中的“藥物治療”也象徵BC即將重生的重要里程碑。這個過程沒有終點，而是不斷蛻變的開始。"
     },
@@ -655,7 +655,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺中市",
         "songs": 24,
-        "follower": 2301,
+        "follower": 2303,
         "following": 0,
         "content": "\n《OBSESS》\nOBSESS成立自2008年，樂團始終保持謹慎的態度，記錄每一件這個世界正在發生的故事，之後以極大化的情緒詮釋成曲。OBSESS的音樂早期受到Emo、Emo punk、Post hardcore的樂風影響極深,以如此直接並帶著豐富情感的音樂去衝擊聽眾的感官與思想，便是OBSESS一直在做的事。 \nOBSESS經常受邀參加台灣各大音樂節，共發行過三張作品：【INTERFERE(2010)】、【RISE IN ARMS(2013)】，【Tragic & Fantastic(2015)】。近年更相繼與歐美日本知名樂團【Story Of The Year】、【Bring Me The Horizon】、【Crossfaith】、【Adept】同台演出。\n試聽：indievox:http://www.indievox.com/obsessstreetvoice:http://tw.streetvoice.com/users/OBSESS/"
     },
@@ -679,7 +679,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "高雄市",
         "songs": 16,
-        "follower": 729,
+        "follower": 730,
         "following": 0,
         "content": "\n來自高雄。\n參加過覺醒音樂季、貢寮海洋音樂季、TAKAO ROCK Festival、春天吶喊音樂季、發條音樂節、烏魚季，以及全台大大小小Livehouse如台北Revolver、Pipe，台中迴響、嘉義傲頭厝、台南Tcrc、高雄LIVEWAREHOUSE、月光劇場、百樂門、水星酒館、屏東山羊飯館、宜蘭賣捌所...等演出。\n2016年於高雄百樂門舉辦首張EP《無法忘記的回憶》發片2017年於磚窯場舉辦《煙囪Chimney》單曲發片暨成軍兩年感謝祭。2019年於6月進行全台，北中南的《淪現Falls to Reality》專輯發片巡迴\n樂風以emo為基底，嘗試各種元素、變化節奏、吉他聲線、輕柔的細語呢喃與激昂的吶喊嘶吼，交織凝結成距離一萬公尺雨珠，墜落人最原始的情感，泛起巨大情緒漣漪，滲入平時用堅強偽裝的面具，拿下它，才發現早已淚流滿面。\n我們是 煙雨飄渺 Rain of Sorrow。"
     },
@@ -703,7 +703,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 11,
-        "follower": 7110,
+        "follower": 7112,
         "following": 3,
         "content": ""
     },
@@ -715,7 +715,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 8,
-        "follower": 1366,
+        "follower": 1367,
         "following": 0,
         "content": "\n2018年2月，雷擎與余昊益正在進行一個四天寫完三首歌的高壓練習計畫，途中得知位於台北市水源路的舊有工作室即將四散的消息，這個忽如其來的打擊，因此解放了雷擎的能量，忽然能聽見朋友們嗓音中發亮的位置，音樂也跟著一句句流瀉而出。於是信心滿滿，拉住準備離開的朋友們，組成音樂組織—水源。\n水源招集眾多獨立樂團的創作者如馬克白、威愷爆炸、Boycany等，從台北到高雄、從地下到時尚，少年仔集結彼此力量，期待玩出獨樹一格且全面的作品。\n而水源所推出的同名之作，為即將解約的工作室所創作的告別歌曲為概念。處男EP內集結水源內部成員：余昊益、Wave、222Chopin，台語揉合英文，推出清涼B級勁曲〈風來吹〉、黏膩煽情〈Corny〉。它將會說明如何在10分鐘內完美詮釋你從沒聽過的新台語R&B。來自水源路臥房內的躁動新生力量，首度對外開放，為五月的台北，吹一陣CHILL咪咪的輕風。"
     },
@@ -763,7 +763,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "",
         "songs": 4,
-        "follower": 393,
+        "follower": 394,
         "following": 1,
         "content": "性別：男\n\n成立於2012年五月來自高雄，充滿詩意的台語搖滾樂團。淺白的台語歌詞藏著深厚詩意。細膩的吉他描繪著台灣意象；BASS與鼓緊密結合，每每直擊心臟。現場演出時，主唱的嘶吼聲勾出以為長大後就不會有的每個焦慮、痛苦、快樂、幸福。\n時間會帶走一切但帶不走你心中的 孩子王"
     },
@@ -775,7 +775,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "高雄市",
         "songs": 10,
-        "follower": 268,
+        "follower": 269,
         "following": 1,
         "content": "性別：其他\n\n彼岸曙光成立於2011年的高雄，現任團員為Vocal-許淵智、Guitars-劉方毓、呂存恕、Bass-帥晨毅、Drums-周楷倫，曲風以Post Hardcore為基底，融合Modern Rock/Metal/Alternative等元素，而主唱許淵智童年時期深受西方靈魂樂及Deftones音樂氛圍影響，在創作表達方面亦不受傳統Post Hardcore流派框架所拘限。  　　近期作品為2017年底發行的數位EP【永遠地睡了Slept Forever】，描寫現代虛偽膚淺對原始真實靈魂的摧毀，黑暗淒美的旋律與碎裂人心的歌詞交織共舞，時而誘惑地呢喃吟唱，時而憤怒地炸裂嘶吼，讓內心那股絕望又焦躁不安的情緒赤裸地蔓延向這個世界。主唱獨特的唱腔與華麗深邃的編曲完美地相互穿透，帶有東方感的黑色底蘊為樂團的重要特色之一。"
     },
@@ -799,19 +799,19 @@ export const artistData = [
         "type_": "音樂人",
         "place": "",
         "songs": 11,
-        "follower": 424,
+        "follower": 425,
         "following": 0,
         "content": ""
     },
     {
         "id": "Windmillband",
         "artist": "風籟坊 windmill",
-        "band_img": "https://akstatic.streetvoice.com/profile_images/Wi/nd/Windmillband/ZNqebccVWA7iCrmnpVuQZL.JPG?x-oss-process=image/resize,m_fill,h_600,w_600,limit_0/interlace,1/quality,q_95/sharpen,80/format,jpg), .jpg",
-        "bg_img": "https://akstatic.streetvoice.com/profile_cover_images/Wi/nd/Windmillband/zCdXgfHYFrzTpL3q5TLpw8.JPG?x-oss-process=image/resize,m_fill,h_360,w_1920,limit_0/interlace,1/quality,q_95/sharpen,80/format,jpg), .jpg",
+        "band_img": "https://akstatic.streetvoice.com/profile_images/Wi/nd/Windmillband/ZNqebccVWA7iCrmnpVuQZL.JPG",
+        "bg_img": "https://akstatic.streetvoice.com/profile_cover_images/Wi/nd/Windmillband/zCdXgfHYFrzTpL3q5TLpw8.JPG",
         "type_": "音樂人",
         "place": "臺北市",
         "songs": 9,
-        "follower": 1702,
+        "follower": 1701,
         "following": 1,
         "content": "\n2007年春天成軍，發行了Demo甲（2008 ）、Demo乙（2009）；2011年完成了「Demo丙」的錄製，待續發表。\n自「2013 Baybeats Festival 」新加坡公開演出以來，不落足跡的「風籟坊」，隨即悄悄遁隱了起來。團員們各自遊走驛站間，穿梭於大小廳堂，漫步在山林田野，距離上一個場景，恍如隔世，若像昨日，沿路都是自言自語...\n鼓 陳泰元貝司 戴子吉他主唱 林已翔"
     },
@@ -823,7 +823,7 @@ export const artistData = [
         "type_": "音樂人",
         "place": "",
         "songs": 3,
-        "follower": 112,
+        "follower": 114,
         "following": 1,
         "content": "\n【一點生】直指萬事核心的人。一點生是來自四個不同樂團的樂手所組成。詞曲創作均以台語創作，在龐克的根基下擠壓出激烈的搖滾寸勁！"
     },

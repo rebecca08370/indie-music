@@ -3,6 +3,8 @@ import "./styles.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./pages/Header";
 import HomePage from "./pages/HomePage";
+import ArtistsPage from "./pages/ArtistsPage";
+import EventsPage from "./pages/EventsPage";
 import ArtistPage from "./pages/ArtistPage";
 import EventPage from "./pages/EventPage";
 import LoginPage from "./pages/LoginPage";
@@ -16,10 +18,16 @@ export default function App() {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/event">
+        <Route exact path="/events">
+          <EventsPage />
+        </Route>
+        <Route exact path="/events/:eventId">
           <EventPage />
         </Route>
-        <Route exact path="/artist">
+        <Route exact path="/artists">
+          <ArtistsPage />
+        </Route>
+        <Route exact path="/artists/:artistId">
           <ArtistPage />
         </Route>
         <Route exact path="/login">
