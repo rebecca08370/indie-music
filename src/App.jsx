@@ -9,6 +9,8 @@ import ArtistPage from "./pages/ArtistPage";
 import EventPage from "./pages/EventPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import TodayEventPage from "./pages/TodayEventPage";
+import WeekEventPage from "./pages/WeekEventPage";
 
 export default function App() {
   return (
@@ -35,6 +37,12 @@ export default function App() {
         </Route>
         <Route exact path="/signup">
           <SignupPage />
+        </Route>
+        <Route exact path="/todayevent">
+          <TodayEventPage />
+        </Route>
+        <Route exact path="/weekevent">
+          <WeekEventPage />
         </Route>
       </Switch>
     </BrowserRouter>

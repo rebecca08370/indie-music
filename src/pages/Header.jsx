@@ -1,9 +1,9 @@
 import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { useHistory, Link } from "react-router-dom";
-import { Avatar } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
-import 'antd/dist/antd.css';
+import { Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
+import "antd/dist/antd.css";
 
 const toPage = (history, url) => {
   history.push(url);
@@ -41,12 +41,12 @@ const Header = () => {
         <Button
           variant="warning"
           className="mx-1"
-          onClick={() => toPage(history, "/logins")}
+          onClick={() => toPage(history, "/login")}
         >
           Login
         </Button>
         <Link to={"/login"}>
-        <Avatar size={40} icon={<UserOutlined />} />
+          <Avatar size={40} icon={<UserOutlined />} />
         </Link>
       </Nav>
     </Navbar>
