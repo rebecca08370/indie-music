@@ -1,11 +1,18 @@
-import React from "react";
+import React from 'react'
 
 const ArtistInfo = ({ props }) => {
+  const artistInfo = props.fields
+  const artistId = props.id
   return (
     <div>
-      <h2>演出者id：{props.artistId}</h2>
+      <h2>id：{artistId}</h2>
+      <p>演出者id：{artistInfo.artist_id}</p>
+      <p>artist：{artistInfo.artist}</p>
+      <p>band_img：{artistInfo.band_img}</p>
+      <p>follower：{artistInfo.follower}</p>
+      <p>following：{artistInfo.following}</p>
     </div>
-  );
-};
+  )
+}
 
-export default ArtistInfo;
+export default ArtistInfo

@@ -1,16 +1,17 @@
-import React from "react";
-import "./styles.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./pages/Header";
-import HomePage from "./pages/HomePage";
-import ArtistsPage from "./pages/ArtistsPage";
-import EventsPage from "./pages/EventsPage";
-import ArtistPage from "./pages/ArtistPage";
-import EventPage from "./pages/EventPage";
-import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
-import TodayEventPage from "./pages/TodayEventPage";
-import WeekEventPage from "./pages/WeekEventPage";
+import React from 'react'
+import './styles.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Header from './pages/Header'
+import HomePage from './pages/HomePage'
+import ArtistsPage from './pages/ArtistsPage'
+import EventsPage from './pages/EventsPage'
+import ArtistPage from './pages/ArtistPage'
+import EventPage from './pages/EventPage'
+import LoginPage from './pages/LoginPage'
+import SignupPage from './pages/SignupPage'
+import TodayEventPage from './pages/TodayEventPage'
+import WeekEventPage from './pages/WeekEventPage'
+import Test from './Test'
 
 export default function App() {
   return (
@@ -44,7 +45,10 @@ export default function App() {
         <Route exact path="/weekevent">
           <WeekEventPage />
         </Route>
+        <Route exact path="/test">
+          <Test />
+        </Route>
       </Switch>
     </BrowserRouter>
-  );
+  )
 }
