@@ -42,7 +42,7 @@ const ArtistList = ({ artistList = [] }) => {
     <>
       {artistList.map((props) => {
         if (props) {
-          return <ArtistCard props={props}></ArtistCard>
+          return <ArtistCard props={props} key={props.id}></ArtistCard>
         }
         return null
       })}

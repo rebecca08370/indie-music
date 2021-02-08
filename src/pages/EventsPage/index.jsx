@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import EventCard from '../../components/event/EventCard'
 import Styled from 'styled-components'
-import { eventData } from '../../utils/event'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
 import { getEventsInfo } from '../../utils/api'
@@ -40,7 +39,7 @@ const EventList = ({ eventList = [] }) => {
     <>
       {eventList.map((props) => {
         if (props) {
-          return <EventCard props={props}></EventCard>
+          return <EventCard props={props} key={props.id}></EventCard>
         }
         return null
       })}

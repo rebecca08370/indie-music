@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ArtistInfo = ({ props }) => {
+const ArtistInfoCard = ({ props }) => {
   const artistInfo = props.fields
   const artistId = props.id
   return (
@@ -15,4 +15,4 @@ const ArtistInfo = ({ props }) => {
   )
 }
 
-export default ArtistInfo
+export default ArtistInfoCard

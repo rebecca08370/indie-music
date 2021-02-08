@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EventInfo = ({ props }) => {
+const EventInfoCard = ({ props }) => {
   const eventInfo = props.fields
   const eventId = props.id
   return (
@@ -17,4 +17,4 @@ const EventInfo = ({ props }) => {
   )
 }
 
-export default EventInfo
+export default EventInfoCard

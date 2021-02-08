@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import { useParams } from 'react-router-dom'
-import EventInfo from '../../components/event/EventInfo'
+import EventInfoCard from '../../components/event/EventInfoCard'
 import { getEventInfo } from '../../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
@@ -12,35 +12,31 @@ const StyledPage = Styled.div`
 
 const EventPage = () => {
   const { eventId } = useParams()
-  const [input, setInput] = useState('')
-  const [eventListDefault, setEventListDefault] = useState()
-  const [eventList, setEventList] = useState()
+  const [eventInfo, setEventInfo] = useState()
 
-  const [allEventState, setAllEventState] = useState({
+  const [eventInfoState, setEventInfoState] = useState({
     loading: true,
     error: null,
     data: [],
   })
 
   useEffect(() => {
-    setAllEventState({
+    setEventInfoState({
       error: null,
       data: null,
       loading: true,
     })
     getEventInfo(eventId)
       .then((res) => {
-        setAllEventState({
+        setEventInfoState({
           error: null,
           data: res,
           loading: false,
         })
-        console.log(res)
-        setEventList(res)
-        setEventListDefault(res)
+        setEventInfo(res)
       })
       .catch((err) => {
-        setAllEventState({
+        setEventInfoState({
           error: err,
           data: null,
           loading: false,
@@ -49,10 +45,10 @@ const EventPage = () => {
       })
   }, [eventId])
 
-  if (allEventState.error) {
+  if (eventInfoState.error) {
     return <h1>Not found</h1>
   }
-  if (allEventState.loading || !allEventState.data) {
+  if (eventInfoState.loading || !eventInfoState.data) {
     return (
       <div>
         <Skeleton />
@@ -63,7 +59,7 @@ const EventPage = () => {
     <StyledPage>
       <div>
         <h1>EventPage</h1>
-        {eventList && <EventInfo props={eventList} key={eventList.id} />}
+        {eventInfo && <EventInfoCard props={eventInfo} key={eventInfo.id} />}
       </div>
     </StyledPage>
   )

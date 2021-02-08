@@ -50,7 +50,7 @@ const HomePage = () => {
       <StyledRecommend>
         <h2>推薦活動</h2>
         {eventData.slice(0, 3).map((props) => {
-          return <RecommendEvent props={props}></RecommendEvent>
+          return <RecommendEvent props={props} key={props.id}></RecommendEvent>
         })}
       </StyledRecommend>
     </StyledPage>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import { useParams } from 'react-router-dom'
-import ArtistInfo from '../../components/artist/ArtistInfo'
+import ArtistInfoCard from '../../components/artist/ArtistInfoCard'
 import { getArtistInfo } from '../../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
@@ -12,33 +12,31 @@ const StyledPage = Styled.div`
 
 const ArtistPage = () => {
   const { artistId } = useParams()
-  const [input, setInput] = useState('')
-  const [artistList, setArtistList] = useState()
+  const [artistInfo, setArtistInfo] = useState()
 
-  const [allArtistState, setAllArtistState] = useState({
+  const [artistInfoState, setArtistInfoState] = useState({
     loading: true,
     error: null,
     data: [],
   })
 
   useEffect(() => {
-    setAllArtistState({
+    setArtistInfoState({
       error: null,
       data: null,
       loading: true,
     })
     getArtistInfo(artistId)
       .then((res) => {
-        setAllArtistState({
+        setArtistInfoState({
           error: null,
           data: res,
           loading: false,
         })
-        console.log(res)
-        setArtistList(res)
+        setArtistInfo(res)
       })
       .catch((err) => {
-        setAllArtistState({
+        setArtistInfoState({
           error: err,
           data: null,
           loading: false,
@@ -47,10 +45,10 @@ const ArtistPage = () => {
       })
   }, [artistId])
 
-  if (allArtistState.error) {
+  if (artistInfoState.error) {
     return <h1>Not found</h1>
   }
-  if (allArtistState.loading || !allArtistState.data) {
+  if (artistInfoState.loading || !artistInfoState.data) {
     return (
       <div>
         <Skeleton />
@@ -61,7 +59,7 @@ const ArtistPage = () => {
     <StyledPage>
       <div>
         <h1>ArtistPage</h1>
-        {artistList && <ArtistInfo props={artistList} key={artistList.id} />}
+        {artistInfo && <ArtistInfoCard props={artistInfo} key={artistInfo.id} />}
       </div>
     </StyledPage>
   )

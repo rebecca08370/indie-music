@@ -11,7 +11,7 @@ import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
 import TodayEventPage from './pages/TodayEventPage'
 import WeekEventPage from './pages/WeekEventPage'
-import Test from './Test'
+import UserPage from './pages/UserPage'
 
 export default function App() {
   return (
@@ -45,8 +45,8 @@ export default function App() {
         <Route exact path="/weekevent">
           <WeekEventPage />
         </Route>
-        <Route exact path="/test">
-          <Test />
+        <Route exact path="/users/:userid">
+          <UserPage />
         </Route>
       </Switch>
     </BrowserRouter>
