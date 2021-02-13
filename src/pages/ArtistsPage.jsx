@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
-import ArtistCard from '../../components/artist/ArtistCard'
+import ArtistCard from '../components/artist/ArtistCard'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
-import { getArtistsInfo } from '../../utils/api'
+import { getArtistsInfo } from '../utils/api'
 
 const StyledPage = Styled.div`
   margin:4em;

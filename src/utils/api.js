@@ -95,3 +95,59 @@ export const getArtistsInfo = async () => {
     return data;
   };
 
+  export const getTicketInfo = async (id) => {
+    const authToken = "keyznJijtm22VEReI";
+    const { data } = await axios.get(
+      `https://api.airtable.com/v0/appMmxoAOYC9xKGK9/tickets/${id}`,
+      {
+        headers: {
+          Authorization: `Bearer ${authToken}`
+        }
+      }
+    );
+    return data;
+  };
+
+  export const updateTicketInfo = async (id, soldNum, username) => {
+    const authToken = "keyznJijtm22VEReI";
+    const { data } = await axios.patch(
+      `https://api.airtable.com/v0/appMmxoAOYC9xKGK9/tickets/${id}`,
+      {'fields':{'sold':soldNum, 'buyer':username}
+    },
+      {
+        headers: {
+          Authorization: `Bearer ${authToken}`
+        }
+      }
+    );
+    return data;
+  };
+
+  export const sellTicketAdd = async (allInfo) => {
+    const authToken = "keyznJijtm22VEReI";
+    const { data } = await axios.post(
+      `https://api.airtable.com/v0/appMmxoAOYC9xKGK9/tickets`,
+      {'fields':allInfo
+    },
+      {
+        headers: {
+          Authorization: `Bearer ${authToken}`
+        }
+      }
+      
+    );
+    return data;
+  };
+
+  export const getTicketInfo2 = async (id) => {
+    const authToken = "keyznJijtm22VEReI";
+    const { data } = await axios.get(
+      `https://api.airtable.com/v0/appMmxoAOYC9xKGK9/tickets?filterByFormula=eventId%3D%22${id}%22`,
+      {
+        headers: {
+          Authorization: `Bearer ${authToken}`
+        }
+      }
+    );   
+    return data;
+  };

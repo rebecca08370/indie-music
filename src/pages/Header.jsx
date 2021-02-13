@@ -37,27 +37,15 @@ const Header = () => {
         <Button variant="warning" className="mx-1" onClick={() => toPage(history, '/artists')}>
           Artists
         </Button>
-        <Button variant="warning" className="mx-1" onClick={() => toPage(history, '/login')}>
+        {/* <Button variant="warning" className="mx-1" onClick={() => toPage(history, '/login')}>
           Login
+        </Button> */}
+        <Button variant="warning" className="mx-1" onClick={() => toPage(history, '/sellticket')}>
+          售票
         </Button>
         <Button variant="info">
           <Avatar size={40} icon={<UserOutlined />} onClick={() => clickAvator(history)} />
         </Button>
-        {/* {username ? (
-          <Button
-            variant="danger"
-            className="mx-1"
-            onClick={() => {
-              localStorage && localStorage.clear()
-              alert('登出成功！')
-              toPage(history, '/login')
-            }}
-          >
-            登出
-          </Button>
-        ) : (
-          <></>
-        )} */}
       </Nav>
     </Navbar>
   )

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import { useParams } from 'react-router-dom'
-import ArtistInfoCard from '../../components/artist/ArtistInfoCard'
-import { getArtistInfo } from '../../utils/api'
+import ArtistInfoCard from '../components/artist/ArtistInfoCard'
+import { getArtistInfo } from '../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
 

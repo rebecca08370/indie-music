@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import EventCard from '../../components/event/EventCard'
+import EventCard from '../components/event/EventCard'
 import Styled from 'styled-components'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
-import { getTodayEvent } from '../../utils/api'
+import { getTodayEvent } from '../utils/api'
 
 const StyledPage = Styled.div`
   margin:4em;
 `
 
-const WeekEventPage = () => {
+const TodayEventPage = () => {
   const [eventList, setEventList] = useState()
 
   const addDays = (now, add) => {
@@ -20,7 +20,7 @@ const WeekEventPage = () => {
   const date = new Date()
   const dateShow = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
   const before = addDays(date, -1)
-  const after = addDays(date, 8)
+  const after = addDays(date, 2)
 
   const [allEventState, setAllEventState] = useState({
     loading: true,
@@ -66,9 +66,9 @@ const WeekEventPage = () => {
   return (
     <StyledPage>
       <div>
-        <h1>WeekEventPage</h1>
+        <h1>TodayEventPage</h1>
         <h2>
-          {dateShow} ~ {after}：本週活動有{eventList && eventList.length}個
+          {dateShow}：今日活動有{eventList && eventList.length}個
         </h2>
         {eventList &&
           eventList.map((props) => {
@@ -82,4 +82,4 @@ const WeekEventPage = () => {
   )
 }
 
-export default WeekEventPage
+export default TodayEventPage

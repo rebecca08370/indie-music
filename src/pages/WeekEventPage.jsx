@@ -1,22 +1,27 @@
 import React, { useState, useEffect } from 'react'
+import EventCard from '../components/event/EventCard'
 import Styled from 'styled-components'
-import { userLogin } from '../../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
-import { Button } from 'react-bootstrap'
-import { useHistory } from 'react-router-dom'
+import { getTodayEvent } from '../utils/api'
 
 const StyledPage = Styled.div`
   margin:4em;
 `
-const toPage = (history, url) => {
-  history.push(url)
-}
 
-const UserPage = () => {
-  const history = useHistory()
-  const username = localStorage && localStorage.getItem('username')
+const WeekEventPage = () => {
   const [eventList, setEventList] = useState()
+
+  const addDays = (now, add) => {
+    now.setDate(now.getDate() + add)
+    return now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate()
+  }
+
+  const date = new Date()
+  const dateShow = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
+  const before = addDays(date, -1)
+  const after = addDays(date, 8)
+
   const [allEventState, setAllEventState] = useState({
     loading: true,
     error: null,
@@ -29,14 +34,14 @@ const UserPage = () => {
       data: null,
       loading: true,
     })
-    userLogin(username)
+    getTodayEvent(before, after)
       .then((res) => {
         setAllEventState({
           error: null,
           data: res,
           loading: false,
         })
-        setEventList(res.records[0].fields)
+        setEventList(res.records)
       })
       .catch((err) => {
         setAllEventState({
@@ -46,7 +51,7 @@ const UserPage = () => {
         })
         console.error(err)
       })
-  }, [username])
+  }, [after, before])
 
   if (allEventState.error) {
     return <h1>Not found</h1>
@@ -58,26 +63,23 @@ const UserPage = () => {
       </div>
     )
   }
-
   return (
     <StyledPage>
-      <h1>UserPage</h1>
-      <p>username：{eventList && eventList.username}</p>
-      <p>email：{eventList && eventList.email}</p>
-      <p>description：{eventList && eventList.description}</p>
-      <Button
-        variant="danger"
-        className="mx-1"
-        onClick={() => {
-          localStorage && localStorage.clear()
-          alert('登出成功！')
-          toPage(history, '/login')
-        }}
-      >
-        登出
-      </Button>
+      <div>
+        <h1>WeekEventPage</h1>
+        <h2>
+          {dateShow} ~ {after}：本週活動有{eventList && eventList.length}個
+        </h2>
+        {eventList &&
+          eventList.map((props) => {
+            if (props) {
+              return <EventCard props={props} key={props.id}></EventCard>
+            }
+            return null
+          })}
+      </div>
     </StyledPage>
   )
 }
 
-export default UserPage
+export default WeekEventPage

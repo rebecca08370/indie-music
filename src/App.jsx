@@ -12,6 +12,8 @@ import SignupPage from './pages/SignupPage'
 import TodayEventPage from './pages/TodayEventPage'
 import WeekEventPage from './pages/WeekEventPage'
 import UserPage from './pages/UserPage'
+import TicketPage from './pages/TicketPage'
+import SellTicketPage from './pages/SellTicketPage'
 
 export default function App() {
   return (
@@ -45,8 +47,14 @@ export default function App() {
         <Route exact path="/weekevent">
           <WeekEventPage />
         </Route>
-        <Route exact path="/users/:userid">
+        <Route exact path="/users/:userId">
           <UserPage />
+        </Route>
+        <Route exact path="/tickets/:ticketId">
+          <TicketPage />
+        </Route>
+        <Route exact path="/sellticket">
+          <SellTicketPage />
         </Route>
       </Switch>
     </BrowserRouter>

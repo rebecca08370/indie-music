@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Styled from 'styled-components'
 import { Form, Button } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
-import { userLogin } from '../../utils/api'
+import { userLogin } from '../utils/api'
 
 const StyledLogin = Styled.div`
   padding:60px

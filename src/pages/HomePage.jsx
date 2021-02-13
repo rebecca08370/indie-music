@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import { Button } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
-import { eventData } from '../../utils/event'
-import RecommendEvent from '../../components/event/RecommendEvent'
+import { getEventsInfo } from '../utils/api'
+import 'antd/dist/antd.css'
+import { Skeleton } from 'antd'
+import RecommendEvent from '../components/event/RecommendEvent'
 
 const StyledPage = Styled.div`
   margin:4em;
@@ -21,12 +23,51 @@ const toPage = (history, url) => {
   history.push(url)
 }
 
-eventData.sort(function (a, b) {
-  return parseInt(b.like) - parseInt(a.like)
-})
-
 const HomePage = () => {
   const history = useHistory()
+  const [eventList, setEventList] = useState()
+  const [allEventState, setAllEventState] = useState({
+    loading: true,
+    error: null,
+    data: [],
+  })
+
+  useEffect(() => {
+    setAllEventState({
+      error: null,
+      data: null,
+      loading: true,
+    })
+    getEventsInfo()
+      .then((res) => {
+        setAllEventState({
+          error: null,
+          data: res,
+          loading: false,
+        })
+        setEventList(res.records)
+      })
+      .catch((err) => {
+        setAllEventState({
+          error: err,
+          data: null,
+          loading: false,
+        })
+        console.error(err)
+      })
+  }, [])
+
+  if (allEventState.error) {
+    return <h1>Not found</h1>
+  }
+  if (allEventState.loading || !allEventState.data) {
+    return (
+      <div>
+        <Skeleton />
+      </div>
+    )
+  }
+
   return (
     <StyledPage>
       <h1>HomePage</h1>
@@ -49,9 +90,10 @@ const HomePage = () => {
       </StyledButtonGroup>
       <StyledRecommend>
         <h2>推薦活動</h2>
-        {eventData.slice(0, 3).map((props) => {
-          return <RecommendEvent props={props} key={props.id}></RecommendEvent>
-        })}
+        {eventList &&
+          eventList.slice(0, 3).map((props) => {
+            return <RecommendEvent props={props} key={props.id}></RecommendEvent>
+          })}
       </StyledRecommend>
     </StyledPage>
   )

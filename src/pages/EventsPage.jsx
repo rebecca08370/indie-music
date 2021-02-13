@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import EventCard from '../../components/event/EventCard'
+import EventCard from '../components/event/EventCard'
 import Styled from 'styled-components'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
-import { getEventsInfo } from '../../utils/api'
+import { getEventsInfo } from '../utils/api'
 
 const StyledPage = Styled.div`
   margin:4em;
