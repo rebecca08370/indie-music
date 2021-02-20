@@ -1,19 +1,31 @@
 import React, { useState, useEffect } from 'react'
-import EventCard from '../components/event/EventCard'
 import Styled from 'styled-components'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
 import { getEventsInfo } from '../utils/api'
+import AllEvents from '../components/event/AllEvents'
+import banner from '../assets/banner.png'
 
-const StyledPage = Styled.div`
-  margin:4em;
+const StyledSection = Styled.div`
+  padding:70px 160px;
+`
+
+const StyleBg = Styled.div`
+  background-image: url(${banner});
 `
 
 const StyledSearch = Styled.div`
-  padding-bottom:40px;
+text-align: center;
+padding:100px 0px;
+height: 400px;
+margin: 0px 0px 40px 0px;
 `
 
-const StyledEventCard = Styled.div`
+const StyledP = Styled.p`
+  text-align: center;
+  margin:30px 0px;
+  font-size: 26px;
+  color: white;
 `
 
 const SearchBar = ({ input: keyword, onChange: setKeyword }) => {
@@ -28,22 +40,9 @@ const SearchBar = ({ input: keyword, onChange: setKeyword }) => {
       style={BarStyling}
       key="random1"
       value={keyword}
-      placeholder={'Search event name'}
+      placeholder={'搜尋活動名稱'}
       onChange={(e) => setKeyword(e.target.value)}
     />
-  )
-}
-
-const EventList = ({ eventList = [] }) => {
-  return (
-    <>
-      {eventList.map((props) => {
-        if (props) {
-          return <EventCard props={props} key={props.id}></EventCard>
-        }
-        return null
-      })}
-    </>
   )
 }
 
@@ -103,21 +102,22 @@ const EventsPage = () => {
     )
   }
   return (
-    <StyledPage>
+    <div>
       <div>
-        <h1>EventsPage</h1>
+        <StyleBg>
+          <StyledSearch>
+            <StyledP>
+              總共有 {eventListDefault && eventListDefault.length} 個活動，搜尋結果有 {eventList && eventList.length}{' '}
+              個活動
+            </StyledP>
+            <SearchBar input={input} onChange={updateInput} />
+          </StyledSearch>
+        </StyleBg>
+        <StyledSection>
+          <AllEvents eventList={eventList} border="info" />
+        </StyledSection>
       </div>
-      <div>
-        <h2>共有 {eventListDefault && eventListDefault.length} 個events</h2>
-        <h4>搜尋結果有 {eventList && eventList.length} 個events</h4>
-        <StyledSearch>
-          <SearchBar input={input} onChange={updateInput} />
-        </StyledSearch>
-        <StyledEventCard>
-          <EventList eventList={eventList} />
-        </StyledEventCard>
-      </div>
-    </StyledPage>
+    </div>
   )
 }
 

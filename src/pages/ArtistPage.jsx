@@ -2,41 +2,57 @@ import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import { useParams } from 'react-router-dom'
 import ArtistInfoCard from '../components/artist/ArtistInfoCard'
-import { getArtistInfo } from '../utils/api'
+import { getArtistInfo, getArtistEvents } from '../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
+import EventLoadMore from '../components/event/EventLoadMore'
+import RecommendArtistPage from './RecommendArtistPage'
 
-const StyledPage = Styled.div`
-  margin:4em;
+const StyledSection = Styled.div`
+  padding:0px 160px 100px 160px;
+`
+const StyleH1 = Styled.h1`
+  font-size: 34px;
+  margin: 0px 0px 20px 0px;
+`
+const StyledContentSection = Styled.div`
+  padding:0px 20px;
 `
 
 const ArtistPage = () => {
   const { artistId } = useParams()
   const [artistInfo, setArtistInfo] = useState()
-
-  const [artistInfoState, setArtistInfoState] = useState({
+  const [artistEvent, setArtistEvent] = useState()
+  const [uiState, setUiState] = useState({
     loading: true,
     error: null,
     data: [],
   })
 
   useEffect(() => {
-    setArtistInfoState({
+    setUiState({
       error: null,
       data: null,
       loading: true,
     })
     getArtistInfo(artistId)
       .then((res) => {
-        setArtistInfoState({
-          error: null,
-          data: res,
-          loading: false,
-        })
         setArtistInfo(res)
+        getArtistEvents(res && res.fields.artist_id)
+          .then((res) => {
+            setUiState({
+              error: null,
+              data: res,
+              loading: false,
+            })
+            setArtistEvent(res.records)
+          })
+          .catch((err) => {
+            console.error(err)
+          })
       })
       .catch((err) => {
-        setArtistInfoState({
+        setUiState({
           error: err,
           data: null,
           loading: false,
@@ -45,10 +61,10 @@ const ArtistPage = () => {
       })
   }, [artistId])
 
-  if (artistInfoState.error) {
+  if (uiState.error) {
     return <h1>Not found</h1>
   }
-  if (artistInfoState.loading || !artistInfoState.data) {
+  if (uiState.loading || !uiState.data) {
     return (
       <div>
         <Skeleton />
@@ -56,12 +72,16 @@ const ArtistPage = () => {
     )
   }
   return (
-    <StyledPage>
-      <div>
-        <h1>ArtistPage</h1>
-        {artistInfo && <ArtistInfoCard props={artistInfo} key={artistInfo.id} />}
-      </div>
-    </StyledPage>
+    <div>
+      <div>{artistInfo && <ArtistInfoCard props={artistInfo} key={artistInfo.id} />}</div>
+      <StyledSection>
+        <StyledContentSection>
+          <StyleH1>近期活動</StyleH1>
+          {artistEvent && <EventLoadMore props={artistEvent} border="warning" key={artistEvent.event_id} />}
+        </StyledContentSection>
+      </StyledSection>
+      <RecommendArtistPage />
+    </div>
   )
 }
 

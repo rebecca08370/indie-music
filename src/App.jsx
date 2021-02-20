@@ -14,6 +14,11 @@ import WeekEventPage from './pages/WeekEventPage'
 import UserPage from './pages/UserPage'
 import TicketPage from './pages/TicketPage'
 import SellTicketPage from './pages/SellTicketPage'
+import EditTicketPage1 from './pages/EditTicketPage1'
+import EditTicketPage2 from './pages/EditTicketPage2'
+import SearchResult from './pages/SearchResult'
+import Footer from './pages/Footer'
+import About from './pages/About'
 
 export default function App() {
   return (
@@ -56,7 +61,20 @@ export default function App() {
         <Route exact path="/sellticket">
           <SellTicketPage />
         </Route>
+        <Route exact path="/sellticketedit/:ticketId">
+          <EditTicketPage1 />
+        </Route>
+        <Route exact path="/buyticketedit/:ticketId">
+          <EditTicketPage2 />
+        </Route>
+        <Route exact path="/result">
+          <SearchResult />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }

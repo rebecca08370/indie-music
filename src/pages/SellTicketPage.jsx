@@ -12,9 +12,11 @@ import Step5 from '../components/sellTicket/Step5'
 import Step6 from '../components/sellTicket/Step6'
 import { sellTicketAdd } from '../utils/api'
 import { useHistory } from 'react-router-dom'
+import { message } from 'antd'
 
 const StyledPage = Styled.div`
-  margin:4em;
+  padding:70px 160px;
+  // margin:4em;
 `
 
 const StyledStepsContent = Styled.div`
@@ -37,7 +39,7 @@ const SellTicketPage = () => {
   const history = useHistory()
   if (username) {
   } else {
-    alert('需要先登入才能售票')
+    message.warning('需要先登入才能售票')
     history.push('/login')
   }
   const [allInfo, setAllInfo] = useState({ sold: 0, seller: username, buyer: null })
@@ -149,11 +151,11 @@ const SellTicketPage = () => {
     sellTicketAdd(allInfo)
       .then((res) => {
         console.log(res)
-        alert('上架成功！')
+        message.success('上架成功！')
       })
       .catch((err) => {
         console.error(err)
-        alert('上架失敗請稍後再嘗試！')
+        message.error('上架失敗請稍後再嘗試！')
       })
   }
   const handleCancel = () => {
@@ -163,8 +165,7 @@ const SellTicketPage = () => {
   return (
     <StyledPage>
       <div>
-        <h1>SellTicket</h1>
-
+        <h1>售票流程</h1>
         <div className="p-4">
           <Form>
             <Steps current={current}>

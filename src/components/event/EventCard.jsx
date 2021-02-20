@@ -1,30 +1,36 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { StarOutlined } from '@ant-design/icons'
+import { Card } from 'antd'
 
-const EventCard = ({ props }) => {
+const { Meta } = Card
+
+const EventCard = ({ props, border }) => {
   const eventInfo = props.fields
   const eventId = props.id
   return (
-    <div className="p-2">
-      <Card style={{ width: '28rem' }} border="danger">
-        <Card.Body>
-          <Link to={`/events/${eventId}`}>
-            <Card.Title>{eventInfo.event}</Card.Title>
-          </Link>
-          <Card.Subtitle className="mb-2 text-muted">
-            {eventInfo.datetime} , {eventInfo.venue}
-          </Card.Subtitle>
-          <Card.Text>
-            演出者：
-            {eventInfo.show_attendees.reduce((prev, curr) => [prev, ', ', curr])}
-          </Card.Text>
-          <Card.Text>
-            Like：
-            {eventInfo.like}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+    <div>
+      <Link to={`/events/${eventId}`}>
+        <Card hoverable style={{ width: 280, hidth: 260 }} cover={<img alt="example" src={eventInfo.img} />}>
+          <Meta
+            title={eventInfo.event}
+            description={[
+              <div>
+                <p>
+                  {eventInfo.datetime}．{eventInfo.weekday}．{eventInfo.time}
+                </p>
+                <p>
+                  {eventInfo.city}．{eventInfo.venue}
+                </p>
+                <p>
+                  <StarOutlined className="p-2" />
+                  {eventInfo.like}
+                </p>
+              </div>,
+            ]}
+          />
+        </Card>
+      </Link>
     </div>
   )
 }

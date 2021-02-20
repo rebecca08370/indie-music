@@ -1,22 +1,30 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
-import ArtistCard from '../components/artist/ArtistCard'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
 import { getArtistsInfo } from '../utils/api'
+import AllArtists from '../components/artist/AllArtists'
+import banner from '../assets/banner.png'
 
-const StyledPage = Styled.div`
-  margin:4em;
+const StyledSection = Styled.div`
+  padding:70px 160px;
+`
+
+const StyleBg = Styled.div`
+  background-image: url(${banner});
 `
 
 const StyledSearch = Styled.div`
-  padding-bottom:40px;
+  text-align: center;
+  padding:100px 0px;
+  height: 400px;
+  margin: 0px 0px 40px 0px;
 `
-
-const StyledArtistCard = Styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+const StyledP = Styled.p`
+  text-align: center;
+  margin:30px 0px;
+  font-size: 26px;
+  color: white;
 `
 
 const SearchBar = ({ input: keyword, onChange: setKeyword }) => {
@@ -31,22 +39,9 @@ const SearchBar = ({ input: keyword, onChange: setKeyword }) => {
       style={BarStyling}
       key="random1"
       value={keyword}
-      placeholder={'Search artist name'}
+      placeholder={'搜尋樂團'}
       onChange={(e) => setKeyword(e.target.value)}
     />
-  )
-}
-
-const ArtistList = ({ artistList = [] }) => {
-  return (
-    <>
-      {artistList.map((props) => {
-        if (props) {
-          return <ArtistCard props={props} key={props.id}></ArtistCard>
-        }
-        return null
-      })}
-    </>
   )
 }
 
@@ -107,19 +102,22 @@ const ArtistsPage = () => {
   }
 
   return (
-    <StyledPage>
+    <div>
       <div>
-        <h1>ArtistsPage</h1>
+        <StyleBg>
+          <StyledSearch>
+            <StyledP>
+              總共有 {artistListDefault && artistListDefault.length} 個樂團，搜尋結果有{' '}
+              {artistList && artistList.length} 個樂團
+            </StyledP>
+            <SearchBar input={input} onChange={updateInput} />
+          </StyledSearch>
+        </StyleBg>
+        <StyledSection>
+          <AllArtists artistList={artistList} />
+        </StyledSection>
       </div>
-      <h2>共有 {artistListDefault && artistListDefault.length} 位users</h2>
-      <h4>搜尋結果有 {artistList && artistList.length} 位users</h4>
-      <StyledSearch>
-        <SearchBar input={input} onChange={updateInput} />
-      </StyledSearch>
-      <StyledArtistCard>
-        <ArtistList artistList={artistList} />
-      </StyledArtistCard>
-    </StyledPage>
+    </div>
   )
 }
 

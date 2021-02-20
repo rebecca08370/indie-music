@@ -1,30 +1,36 @@
 import React, { useState } from 'react'
 import Styled from 'styled-components'
-import { Form, Button } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
+import { Button } from 'antd'
 import { Link, useHistory } from 'react-router-dom'
 import { userSignup, userLogin } from '../utils/api'
+import { message } from 'antd'
+const StyledSection = Styled.div`
+  text-align:center;
+  padding:100px 200px;
+`
 
-const StyledSignup = Styled.div`
-  padding:60px
+const StyledH1 = Styled.h1`
+  font-size: 32px;
 `
 
 const signupFunc = (history, loginInfo) => {
   userLogin(loginInfo.username)
     .then((res) => {
       if (res.records.length > 0) {
-        alert('此帳號已被註冊')
+        message.error('此帳號已被註冊')
       } else {
         userSignup(loginInfo)
           .then((res) => {
             if (res) {
-              alert('註冊成功')
+              message.success('註冊成功')
               history.push('/')
             } else {
-              alert('錯誤')
+              message.error('錯誤')
             }
           })
           .catch((err) => {
-            alert('無法登入')
+            message.error('無法登入')
             console.log(err)
           })
       }
@@ -38,16 +44,14 @@ const SignupPage = () => {
   const [signupInfo, setSignupInfo] = useState(defaultSignup)
 
   return (
-    <StyledSignup>
-      <h1>SignupPage</h1>
+    <StyledSection>
+      <StyledH1>註冊</StyledH1>
       <div>
         <Link to={`/login`}>
-          <Button variant="light" className="mx-2">
-            會員登入
-          </Button>
+          <Button className="mx-2">會員登入</Button>
         </Link>
         <Link to={`/signup`}>
-          <Button variant="info">加入會員</Button>
+          <Button type="primary">加入會員</Button>
         </Link>
       </div>
       <Form className="my-4">
@@ -79,7 +83,7 @@ const SignupPage = () => {
         </Form.Group>
         <Form.Group controlId="formBasicCheckbox"></Form.Group>
         <Button
-          variant="primary"
+          type="primary"
           onClick={() => {
             signupFunc(history, signupInfo)
           }}
@@ -87,7 +91,7 @@ const SignupPage = () => {
           註冊
         </Button>
       </Form>
-    </StyledSignup>
+    </StyledSection>
   )
 }
 

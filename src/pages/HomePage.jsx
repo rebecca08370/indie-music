@@ -1,31 +1,65 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
-import { Button } from 'react-bootstrap'
-import { useHistory } from 'react-router-dom'
 import { getEventsInfo } from '../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
-import RecommendEvent from '../components/event/RecommendEvent'
+import Comments from '../components/comments/Comments'
+import WeekEventPage from './WeekEventPage'
+import TodayEventPage from './TodayEventPage'
+import SearchBar from '../components/search/SearchBar'
+import EventLoadMore from '../components/event/EventLoadMore'
+import banner from '../assets/banner.png'
+import recommend_bg from '../assets/recommend_bg.png'
 
 const StyledPage = Styled.div`
-  margin:4em;
+`
+
+const SyledButton = Styled.button`
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #ff7a64;
+  border-color:transparent;
+  color: white;
+`
+
+const StyledSearchSection = Styled.div`
+  height: 400px;
+  padding:60px 0px;
+  text-align: center;
+  background-image: url(${banner});
+`
+
+const StyledSearchSectionH1 = Styled.h1`
+  text-align: center;
+  margin:30px 0px;
+  color: white;
+  font-size: 40px;
+`
+
+const StyledSection = Styled.div`
+  padding:40px 0px;
+  margin:40px 160px;
+`
+
+const StyledCommentBg = Styled.div`
+  background-image: url(${recommend_bg});
+`
+
+const StyledH1 = Styled.h1`
+  text-align: center;
+  margin:30px 0px;
+  font-size: 32px;
 `
 
 const StyledButtonGroup = Styled.div`
-  padding:20px 0px
+  text-align: center;
+  padding:0px 10px;
 `
-
-const StyledRecommend = Styled.div`
-padding:20px 0px
-`
-
-const toPage = (history, url) => {
-  history.push(url)
-}
 
 const HomePage = () => {
-  const history = useHistory()
   const [eventList, setEventList] = useState()
+  const [status, setStatus] = useState('today')
   const [allEventState, setAllEventState] = useState({
     loading: true,
     error: null,
@@ -70,31 +104,45 @@ const HomePage = () => {
 
   return (
     <StyledPage>
-      <h1>HomePage</h1>
-      <StyledButtonGroup>
-        <Button variant="primary" className="mx-1" onClick={() => toPage(history, '/')}>
-          Home
-        </Button>
-        <Button variant="primary" className="mx-1" onClick={() => toPage(history, '/events')}>
-          所有活動
-        </Button>
-        <Button variant="primary" className="mx-1" onClick={() => toPage(history, '/artists')}>
-          所有演出者
-        </Button>
-        <Button variant="primary" className="mx-1" onClick={() => toPage(history, '/todayevent')}>
-          今日活動
-        </Button>
-        <Button variant="primary" className="mx-1" onClick={() => toPage(history, '/weekevent')}>
-          本週活動
-        </Button>
-      </StyledButtonGroup>
-      <StyledRecommend>
-        <h2>推薦活動</h2>
-        {eventList &&
-          eventList.slice(0, 3).map((props) => {
-            return <RecommendEvent props={props} key={props.id}></RecommendEvent>
-          })}
-      </StyledRecommend>
+      <StyledSearchSection>
+        <StyledSearchSectionH1>讓您與喜愛的樂團不再錯過！</StyledSearchSectionH1>
+        <SearchBar />
+      </StyledSearchSection>
+      <StyledSection>
+        <StyledH1>活動列表</StyledH1>
+        <StyledButtonGroup>
+          <SyledButton
+            variant="success"
+            className="mx-1"
+            onClick={() => {
+              setStatus('today')
+            }}
+          >
+            今日活動
+          </SyledButton>
+          <SyledButton
+            variant="success"
+            className="mx-1"
+            onClick={() => {
+              setStatus('thisweek')
+            }}
+          >
+            本週活動
+          </SyledButton>
+        </StyledButtonGroup>
+        {status === 'today' ? <TodayEventPage /> : <WeekEventPage />}
+      </StyledSection>
+
+      <StyledSection>
+        <StyledH1>推薦活動</StyledH1>
+        {eventList && <EventLoadMore props={eventList.slice(0, 9)} border="warning" />}
+      </StyledSection>
+      <StyledCommentBg>
+        <StyledSection>
+          <StyledH1>使用者推薦</StyledH1>
+          <Comments />
+        </StyledSection>
+      </StyledCommentBg>
     </StyledPage>
   )
 }

@@ -3,12 +3,28 @@ import Styled from 'styled-components'
 import { userLogin } from '../utils/api'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
-import { Button } from 'react-bootstrap'
+import { Button } from 'antd'
 import { useHistory } from 'react-router-dom'
+import UserTicketPage from './UserTicketPage'
+import { message } from 'antd'
 
-const StyledPage = Styled.div`
-  margin:4em;
+const StyledSection = Styled.div`
+padding:0px 160px;
 `
+
+const StyleH1 = Styled.h1`
+  font-size: 34px;
+`
+
+const StyleP = Styled.p`
+  font-size: 20px;
+`
+
+const StyledContentSection = Styled.div`
+  padding:0px 160px;
+  padding:50px 30px 30px 30px;
+`
+
 const toPage = (history, url) => {
   history.push(url)
 }
@@ -60,23 +76,35 @@ const UserPage = () => {
   }
 
   return (
-    <StyledPage>
-      <h1>UserPage</h1>
-      <p>username：{eventList && eventList.username}</p>
-      <p>email：{eventList && eventList.email}</p>
-      <p>description：{eventList && eventList.description}</p>
-      <Button
-        variant="danger"
-        className="mx-1"
-        onClick={() => {
-          localStorage && localStorage.clear()
-          alert('登出成功！')
-          toPage(history, '/login')
-        }}
-      >
-        登出
-      </Button>
-    </StyledPage>
+    <div>
+      <StyledSection>
+        <StyledContentSection>
+          <div className="container">
+            <div className="row">
+              <div className="col-10">
+                <StyleH1>會員資訊</StyleH1>
+                <StyleP>username：{eventList && eventList.username}</StyleP>
+                <StyleP>email：{eventList && eventList.email}</StyleP>
+              </div>
+              <div className="col-2">
+                <Button
+                  type="primary"
+                  onClick={() => {
+                    localStorage && localStorage.clear()
+                    message.success('登出成功！')
+                    toPage(history, '/login')
+                  }}
+                >
+                  登出
+                </Button>
+              </div>
+            </div>
+          </div>
+        </StyledContentSection>
+        <hr />
+      </StyledSection>
+      <UserTicketPage />
+    </div>
   )
 }
 

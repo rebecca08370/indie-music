@@ -7,9 +7,18 @@ import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
 import { Modal } from 'antd'
 import { Button } from 'antd'
+import { message } from 'antd'
 
-const StyledPage = Styled.div`
-  margin:4em;
+const StyledSection = Styled.div`
+  padding:70px 300px;
+`
+
+const StyledButtonSection = Styled.div`
+  padding:40px 0px;
+`
+const StyleH1 = Styled.h1`
+  font-size: 34px;
+  padding: 0px 0px 20px 0px;
 `
 const TicketPage = () => {
   const { ticketId } = useParams()
@@ -28,12 +37,12 @@ const TicketPage = () => {
     setIsModalVisible(false)
     updateTicketInfo(artistInfo.id, artistInfo.fields.quantity, username)
       .then((res) => {
-        alert('購買成功！')
+        message.success('購買成功！')
         history.push('/')
       })
       .catch((err) => {
         console.error(err)
-        alert('購買失敗請稍後再嘗試！')
+        message.error('購買失敗請稍後再嘗試！')
       })
   }
   const handleCancel = () => {
@@ -80,17 +89,25 @@ const TicketPage = () => {
     if (username) {
       setIsModalVisible(true)
     } else {
-      alert('需要先登入才能購票')
+      message.warning('需要先登入才能購票')
       history.push('/login')
     }
   }
 
   return (
-    <StyledPage>
+    <StyledSection>
       <div>
-        <h1>TicketPage</h1>
+        <StyleH1>票券資訊</StyleH1>
         {artistInfo && <TicketInfoCard props={artistInfo} key={artistInfo.id} />}
-        <div>
+        <StyledButtonSection>
+          <Button
+            className="m-2"
+            onClick={() => {
+              history.goBack()
+            }}
+          >
+            回上一頁
+          </Button>
           <Button
             type="danger"
             onClick={() => {
@@ -109,9 +126,9 @@ const TicketPage = () => {
           >
             <p>確定購買此票券嗎？</p>
           </Modal>
-        </div>
+        </StyledButtonSection>
       </div>
-    </StyledPage>
+    </StyledSection>
   )
 }
 

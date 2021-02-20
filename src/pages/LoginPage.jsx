@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
 import Styled from 'styled-components'
-import { Form, Button } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
+import { Button } from 'antd'
 import { Link, useHistory } from 'react-router-dom'
 import { userLogin } from '../utils/api'
+import { message } from 'antd'
 
-const StyledLogin = Styled.div`
-  padding:60px
+const StyledSection = Styled.div`
+  text-align:center;
+  padding:100px 200px;
+`
+
+const StyledH1 = Styled.h1`
+  font-size: 32px;
 `
 
 const toPage = (history) => {
@@ -25,17 +32,17 @@ const handleLogin = (history, loginInfo) => {
           localStorage && localStorage.setItem('password', res.records[0].fields.password)
           localStorage && localStorage.setItem('email', res.records[0].fields.email)
           localStorage && localStorage.setItem('description', res.records[0].fields.description)
-          alert('登入成功')
+          message.success('登入成功')
           toPage(history)
         } else {
-          alert('密碼錯誤，請重新輸入')
+          message.error('密碼錯誤，請重新輸入')
         }
       } else {
-        alert('帳號不存在，請重新輸入')
+        message.error('帳號不存在，請重新輸入')
       }
     })
     .catch((err) => {
-      alert('無法登入')
+      message.error('無法登入')
       console.log(err)
     })
 }
@@ -46,16 +53,16 @@ const LoginPage = () => {
   const [loginInfo, setLoginInfo] = useState(defaultLoginInfo)
 
   return (
-    <StyledLogin>
-      <h1>LoginPage</h1>
+    <StyledSection>
+      <StyledH1>登入</StyledH1>
       <div>
         <Link to={`/login`}>
-          <Button variant="info" className="mx-2">
+          <Button type="primary" className="mx-2">
             會員登入
           </Button>
         </Link>
         <Link to={`/signup`}>
-          <Button variant="light">加入會員</Button>
+          <Button>加入會員</Button>
         </Link>
       </div>
       <Form className="my-4">
@@ -78,7 +85,7 @@ const LoginPage = () => {
         </Form.Group>
         <Form.Group controlId="formBasicCheckbox"></Form.Group>
         <Button
-          variant="primary"
+          type="primary"
           onClick={() => {
             handleLogin(history, loginInfo)
           }}
@@ -86,7 +93,7 @@ const LoginPage = () => {
           登入
         </Button>
       </Form>
-    </StyledLogin>
+    </StyledSection>
   )
 }
 

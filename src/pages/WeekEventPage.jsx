@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import EventCard from '../components/event/EventCard'
 import Styled from 'styled-components'
 import 'antd/dist/antd.css'
 import { Skeleton } from 'antd'
 import { getTodayEvent } from '../utils/api'
+import EventLoadMore from '../components/event/EventLoadMore'
 
-const StyledPage = Styled.div`
-  margin:4em;
+const StyledCenter = Styled.div`
+  text-align: center;
+  margin:20px 0px;
 `
 
 const WeekEventPage = () => {
@@ -64,21 +65,23 @@ const WeekEventPage = () => {
     )
   }
   return (
-    <StyledPage>
+    <div>
       <div>
-        <h1>WeekEventPage</h1>
-        <h2>
+        <StyledCenter>
           {dateShow} ~ {after}：本週活動有{eventList && eventList.length}個
-        </h2>
-        {eventList &&
+        </StyledCenter>
+
+        {eventList && <EventLoadMore props={eventList} border="danger" />}
+
+        {/* {eventList &&
           eventList.map((props) => {
             if (props) {
               return <EventCard props={props} key={props.id}></EventCard>
             }
             return null
-          })}
+          })} */}
       </div>
-    </StyledPage>
+    </div>
   )
 }
 

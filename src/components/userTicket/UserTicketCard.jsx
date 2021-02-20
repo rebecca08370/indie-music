@@ -11,16 +11,7 @@ const SyledButton = Styled.button`
   color:white;
   font-size: 18px;
 `
-const SyledButton2 = Styled.button`
-  width: 100px;
-  height: 40px;
-  border-radius: 30px;
-  background-color: #8e8e93;
-  color:white;
-  font-size: 18px;
-`
-
-const TicketCard = ({ props }) => {
+const UserTicketCard = ({ props, ediType }) => {
   const ticketInfo = props.fields
   const ticketId = props.id
   return (
@@ -29,21 +20,15 @@ const TicketCard = ({ props }) => {
         <Card.Body>
           <div className="container">
             <div className="row">
-              <div className="col-2">賣家：{ticketInfo.seller}</div>
+              <div className="col-2">{ticketInfo.event}</div>
               <div className="col-2">{ticketInfo.ticketType}</div>
               <div className="col-2">$ {ticketInfo.sellPrice}</div>
               <div className="col-2">{ticketInfo.quantity} 張</div>
-              <div className="col-2">上架時間：{ticketInfo.created}</div>
+              <div className="col-2">賣家：{ticketInfo.seller}</div>
               <div className="col-2">
-                {ticketInfo.left === 0 ? (
-                  <Link to={`/tickets/${ticketId}`} disabled>
-                    <SyledButton2>已售完</SyledButton2>
-                  </Link>
-                ) : (
-                  <Link to={`/tickets/${ticketId}`}>
-                    <SyledButton>我要購買</SyledButton>
-                  </Link>
-                )}
+                <Link to={`/${ediType}ticketedit/${ticketId}`}>
+                  <SyledButton>編輯</SyledButton>
+                </Link>
               </div>
             </div>
           </div>
@@ -53,4 +38,4 @@ const TicketCard = ({ props }) => {
   )
 }
 
-export default TicketCard
+export default UserTicketCard

@@ -1,27 +1,23 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { Card } from 'antd'
+const { Meta } = Card
 
 const TicketInfoCard = ({ props }) => {
   const ticketInfo = props.fields
-  const ticketId = props.id
   return (
-    <div>
-      <h2>id：{ticketId}</h2>
-      <p>ticket_id：{ticketInfo.ticket_id}</p>
-      <p>ticket_type：{ticketInfo.ticketType}</p>
-      <p>price：{ticketInfo.sellPrice}</p>
-      <p>
-        quantity：
-        <Button size="sm" disabled>
-          -
-        </Button>
-        {ticketInfo.quantity}
-        <Button size="sm" disabled>
-          +
-        </Button>
-      </p>
-      <p>seller：{ticketInfo.seller}</p>
-    </div>
+    <Card style={{ width: 240, hidth: 200 }}>
+      <Meta
+        title={ticketInfo.event}
+        description={[
+          <div>
+            <p>票種：{ticketInfo.ticketType}</p>
+            <p>票價：{ticketInfo.sellPrice}</p>
+            <p>數量： {ticketInfo.quantity}</p>
+            <p>賣家：{ticketInfo.seller}</p>
+          </div>,
+        ]}
+      />
+    </Card>
   )
 }
 
