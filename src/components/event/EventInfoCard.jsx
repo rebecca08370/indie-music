@@ -4,6 +4,8 @@ import { Card } from 'antd'
 import { StarOutlined } from '@ant-design/icons'
 import { message } from 'antd'
 import { addNotify, getNotify, deleteNotify } from '../../utils/api'
+import { CalendarOutlined, EnvironmentOutlined, LinkOutlined } from '@ant-design/icons'
+import ArtistLink from '../artist/ArtistLink'
 
 const { Meta } = Card
 const StyledSection = Styled.div`
@@ -57,8 +59,16 @@ const get_ = ({ eventInfo, username }) => {
   }
 }
 
+const get_2 = ({ props }) => {
+  if (props.fields.username) {
+    return props.fields
+  } else {
+    return { ...props.fields, username: [] }
+  }
+}
+
 const EventInfoCard = ({ props, ticketInfo }) => {
-  const [eventInfo, setEventInfo] = useState(props.fields)
+  const [eventInfo, setEventInfo] = useState(get_2({ props }))
   const username = localStorage && localStorage.getItem('username')
   const [notify, setNotify] = useState(get_({ eventInfo, username }))
 
@@ -66,29 +76,30 @@ const EventInfoCard = ({ props, ticketInfo }) => {
     if (username) {
       addNotify({ username: username, events_id: [props.id] })
         .then((res) => {
-          message.success('開啟通知成功！')
           setEventInfo({ ...eventInfo, username: [...eventInfo.username, username] })
           setNotify(!notify)
+          message.success('開啟通知成功！')
         })
         .catch((err) => {
+          console.log(err)
           message.error('開啟通知失敗，請稍後再試')
         })
     } else {
       message.error('請先登入 才能開啟票券通知！')
     }
   }
-
   const notifyOff = () => {
     if (username) {
       getNotify({ username: username, event_id: eventInfo.event_id })
         .then((res) => {
           deleteNotify({ id: res.records[0].id })
             .then((res) => {
-              message.success('關閉通知成功！')
               setNotify(!notify)
               setEventInfo({ ...eventInfo, username: eventInfo.username.filter((item) => item !== username) })
+              message.success('關閉通知成功！')
             })
             .catch((err) => {
+              console.log(err)
               message.error('關閉通知失敗，請稍後再試')
             })
         })
@@ -99,7 +110,6 @@ const EventInfoCard = ({ props, ticketInfo }) => {
       message.error('請先登入 才能開啟票券通知！')
     }
   }
-
   return (
     <div>
       <StyledImgSection>
@@ -111,13 +121,18 @@ const EventInfoCard = ({ props, ticketInfo }) => {
           <div className="row">
             <div className="col-8">
               <p>
+                <CalendarOutlined className="mr-2" style={{ fontSize: 20, color: '#ff7a64' }} />
                 {eventInfo.datetime}．{eventInfo.weekday}．{eventInfo.time}
               </p>
               <p>
+                <EnvironmentOutlined className="mr-2" style={{ fontSize: 20, color: '#ff7a64' }} />
                 {eventInfo.city}．{eventInfo.venue}
               </p>
-              <p>{eventInfo.event_fb}</p>
-              <p>{eventInfo.link_attendees}</p>
+              <p>
+                <LinkOutlined className="mr-2" style={{ fontSize: 20, color: '#ff7a64' }} />
+                {eventInfo.event_fb}
+              </p>
+              <p>{eventInfo && <ArtistLink props={eventInfo} />}</p>
             </div>
             <div className="col-4">
               <StyledCard>

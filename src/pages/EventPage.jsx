@@ -41,8 +41,6 @@ const transferJson = (resTicket) => {
 const EventPage = () => {
   const { eventId } = useParams()
   const history = useHistory()
-  // const username = localStorage && localStorage.getItem('username')
-  // const [notify, setNotify] = useState()
   const [eventInfo, setEventInfo] = useState()
   const [ticketInfo, setTicketInfo] = useState()
   const [uiState, setUiState] = useState({
@@ -95,25 +93,9 @@ const EventPage = () => {
     )
   }
 
-  // const onClickFunc = () => {
-  //   if (username) {
-  //     setNotify(!notify)
-  //   } else {
-  //     message.error('請先登入 才能開啟票券通知！')
-  //   }
-  // }
-
   return (
     <div>
-      {eventInfo && (
-        <EventInfoCard
-          props={eventInfo}
-          key={eventInfo.id}
-          ticketInfo={ticketInfo}
-          // onClickFunc={onClickFunc}
-          // notify={notify}
-        />
-      )}
+      {eventInfo && <EventInfoCard props={eventInfo} key={eventInfo.id} ticketInfo={ticketInfo} />}
 
       <StyledSection className="container">
         <Button

@@ -46,7 +46,6 @@ const SearchResult = (props) => {
           data: res,
           loading: false,
         })
-        // console.log(res)
         setEventList(res.records)
       })
       .catch((err) => {

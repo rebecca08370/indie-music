@@ -134,7 +134,6 @@ const SellTicketPage = () => {
 
   const next = (allInfo) => {
     setCurrent(current + 1)
-    console.log(allInfo)
   }
 
   const prev = () => {
@@ -150,7 +149,6 @@ const SellTicketPage = () => {
     setCurrent(current + 1)
     sellTicketAdd(allInfo)
       .then((res) => {
-        console.log(res)
         message.success('上架成功！')
       })
       .catch((err) => {

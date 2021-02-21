@@ -61,8 +61,6 @@ const EditTicketPage2 = () => {
     )
   }
 
-  console.log(ticketInfo && ticketInfo.fields)
-
   return (
     <StyledSection>
       <StyleH1>購買票券編輯頁</StyleH1>
